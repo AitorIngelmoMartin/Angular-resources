@@ -1,0 +1,22 @@
+<app-user>USUARIO</app-user>
+<section>
+    <p>Parrafo de prueba</p>
+</section>
+
+@defer (on viewport) {
+<article>
+    <app-comments>
+
+    </app-comments>
+</article>
+} @placeholder {
+    <!--
+    Esto se muestra cuando no hay componente pero tampoco está cargando.
+    Simplemente es la reserva del hueco
+    -->
+    <p>Futuros comentarios</p>
+} @loading {
+    <!-- Esto es lo que se muestra si está cargando aún -->
+    <p>Cargando comentarios ... </p>
+}
+
